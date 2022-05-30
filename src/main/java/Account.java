@@ -15,7 +15,7 @@ public class Account {
     }
 
     private boolean checkLengthName() {
-        return name.length() >= 3 && name.length() <= 19;
+        return !(name == null) && name.length() >= 3 && name.length() <= 19;
     }
 
     private boolean checkSpacesIntoName() {
